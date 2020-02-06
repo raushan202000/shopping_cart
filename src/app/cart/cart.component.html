@@ -1,0 +1,56 @@
+
+<nav class="navbar navbar-expand-md  navbar-dark fixed-top " style="background-color: rgb(90, 50, 90); ">
+    <a routerLink="/home" class="navbar-brand" target="_blank" href=""><img src="https://www.pixweaver.com/service_logos/logo_20180325015241.gif" style="height:6vh;width: 10vw;" alt="Shopping-Cart">
+    </a>
+    
+    <!-- Toggler/collapsibe Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+     <span class="navbar-toggler-icon" ></span>
+</button>
+
+<!-- Navbar links -->
+<div class="collapse navbar-collapse" id="collapsibleNavbar"  >
+
+    <ul class="navbar-nav" >
+      <li class="nav-item" >
+        <a routerLink="/home" class="nav-link"  style="color: white; "  ><i class='fas fa-home'></i><strong>HOME</strong></a>
+      <!-- </li>
+       <li class="nav-item">
+        <a routerLink="/cart" class="nav-link" style="color: white;"><i class='fas fa-shopping-cart'></i><strong>CART</strong></a>
+      </li>  -->
+      <li class="nav-item"> 
+        <a routerLink="/contact" class="nav-link" style="color: white;"><strong>CONTACT</strong></a>
+      </li>
+      <li class="nav-item" >
+        <p ><i style="color: rgb(238, 84, 45);" class="fa fa-user" aria-hidden="true"></i>
+          <strong style="color:rgb(250, 249, 208);font-size: x-large;">{{user}}</strong></p>
+      </li>
+    </ul>
+</div>
+</nav>
+
+<div *ngFor="let data of data" > 
+    <div class="row" style="margin-top: 80px;" *ngIf="data.condition">
+          <div class="col-sm-1"><i style="color: white;">{{data.index}}</i></div>
+          <div class="col-sm-4">
+              <img src="{{data.src}}" width="150px" height="150px">
+           </div>
+         <div class="col-sm-3">
+               <div class="row">
+                    <div class="col-sm12"><b>{{data.name}}</b></div>
+               </div>
+              <div class="row">
+                 <div class="col-sm12"><i class='fas fa-rupee-sign'></i>{{data.price}}</div>
+               </div>
+         </div>
+         <div class="col-sm-3">
+            <div class="row">
+                 <div class="col-sm12"><button type="button" class="btn btn-primary" ><a routerLink="/login" style="text-decoration: white;"><b style="color: white;">buy now</b></a></button></div>
+            </div>
+           <div class="row" style="margin-top: 15px;">
+              <div class="col-sm12"><button type="button" class="btn btn-danger" (click)="itemremove($event)" >Remove</button></div>
+            </div>
+      </div>
+   </div>
+  
+</div>

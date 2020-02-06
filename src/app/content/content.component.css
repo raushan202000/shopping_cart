@@ -1,0 +1,23 @@
+.as{
+    color: #fff;
+    display: inline;
+    margin-left: 10%;
+
+}
+img{
+    display: inline;
+    border-radius: 100%;
+    margin-left: 10%;
+}
+p {
+    text-align: center;
+}
+h1 {
+    margin-left: 10%;
+}
+h2 {
+    margin-left: 10%;
+}
+body {
+    background-color: grey;
+}

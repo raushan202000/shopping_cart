@@ -1,0 +1,84 @@
+<!-- <div class="container mt-4">
+
+    <!-- Grid row -->
+    <!-- <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="text-center default-text py-3"><i class="fa fa-lock"></i>Signup : </h3>
+                    
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="text" id="defaultForm-email" class="form-control">
+                        <label for="defaultForm-email">Your name</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="text" id="defaultForm-email" class="form-control">
+                        <label for="defaultForm-email">Your email</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="text" id="defaultForm-email" class="form-control">
+                        <label for="defaultForm-email">Your Phone</label>
+                    </div> -->
+                    <!-- <div class="md-form">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass" class="form-control">
+                        <label for="defaultForm-pass">Your password</label>
+                    </div> -->
+                    <!-- <div class="text-center">
+                        <button class="btn btn-default waves-effect waves-light">Get OTP</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Grid column -->
+    <!-- </div>
+</div>  -->
+
+
+
+
+<mat-card style="margin-top: 10%;margin-left: 10%;margin-right: 10%; background-color: rgb(248, 238, 149);">
+    <div [hidden]="user">
+      <mat-card-title style="text-align: center;color: rgb(18, 82, 221);">Welcome to SHOPPING-KART</mat-card-title>
+          <mat-card-content >
+            ​ <mat-form-field>
+                   <label for="phone">Name</label>
+                   <br><br>
+                   <input matInput type="text" [(ngModel)]="phoneNumber.name"  class="input" placeholder="enter name"    maxlength="15">
+                   <br>
+                   <label for="phone">Phone Number</label>
+                   <br>
+                   <input matInput type="text" [(ngModel)]="phoneNumber.country"  class="input" placeholder="+91"    maxlength="3">
+                   <br>
+                   <input matInput type="text" [(ngModel)]="phoneNumber.number"     class="input" placeholder="Enter Phone"  maxlength="10">
+              
+                   <div id="recaptcha-container">
+  
+                   </div>
+            ​
+                  <button class="button" mat-raised-button color="primary"(click)="sendLoginCode()">Send Code</button>
+            ​</mat-form-field>
+              
+                      <div *ngIf="windowRef.confirmationResult">
+                        <hr>
+                        <label for="code">Enter your Verification Code Here</label><br>
+                        <input type="text" name="code" [(ngModel)]="verificationCode">
+                    ​
+                        <button  (click)="verifyLoginCode()">Verify</button>
+                      </div>
+  ​
+                        <div *ngIf="user">
+                          You have successfully logged in with your phone number!
+                        ​
+                          UserId: {{ user?.uid }}
+                        ​
+                        </div>
+            </mat-card-content>
+     </div>
+  ​
+  </mat-card>
+        

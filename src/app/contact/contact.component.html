@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-md  navbar-dark fixed-top " style="background-color: rgb(90, 50, 90); ">
+    <a routerLink="/home" class="navbar-brand" target="_blank" href=""><img src="https://www.pixweaver.com/service_logos/logo_20180325015241.gif" style="height:6vh;width: 10vw;" alt="Shopping-Cart">
+    </a>
+    
+    <!-- Toggler/collapsibe Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+     <span class="navbar-toggler-icon" ></span>
+</button>
+
+<!-- Navbar links -->
+<div class="collapse navbar-collapse" id="collapsibleNavbar"  >
+
+    <ul class="navbar-nav" >
+      <li class="nav-item" >
+        <a routerLink="/home" class="nav-link"  style="color: white; "  ><i class='fas fa-home'></i><strong>HOME</strong></a>
+      </li>
+      <!-- <li class="nav-item">
+        <a routerLink="/signin" class="nav-link"  style="color: white;"><i class="fa fa-user-circle"></i><strong>LOG IN </strong></a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/signup" class="nav-link" style="color: white;"><i class="fas fa-user-plus"></i><strong>SIGN UP</strong></a>
+      </li> -->
+       <li class="nav-item">
+        <a routerLink="/cart" class="nav-link" style="color: white;"><i class='fas fa-shopping-cart'></i><strong>CART</strong></a>
+      </li>
+      <li class="nav-item" >
+        <p ><i style="color: rgb(238, 84, 45);" class="fa fa-user" aria-hidden="true"></i>
+          <strong style="color:rgb(250, 249, 208);font-size: x-large;">{{user}}</strong></p>
+      </li>
+    </ul>
+</div>
+</nav>
+
+
+
+
+<section id="contact" style="margin-top: 10%;">
+    <div class="container">
+        <h3 class="text-center text-uppercase">contact us</h3>
+        <p class="text-center w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum purus at sem ornare sodales. Morbi leo nulla, pharetra vel felis nec, ullamcorper condimentum quam.</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+            <div class="card border-0">
+               <div class="card-body text-center">
+                 <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                 <h4 class="text-uppercase mb-5">call us</h4>
+                 <p>+9430200246,+6287331151</p>
+               </div>
+             </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+            <div class="card border-0">
+               <div class="card-body text-center">
+                 <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                 <h4 class="text-uppercase mb-5">office loaction</h4>
+                <address>Suite 02, Level 12, Sahera Tropical Center </address>
+               </div>
+             </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+            <div class="card border-0">
+               <div class="card-body text-center">
+                 <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                 <h4 class="text-uppercase mb-5">office loaction</h4>
+                 <address>Suite 02, Level 12, Sahera Tropical Center </address>
+               </div>
+             </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+            <div class="card border-0">
+               <div class="card-body text-center">
+                 <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                 <h4 class="text-uppercase mb-5">email</h4>
+                 <p>raushan202000@gmail.com</p>
+               </div>
+             </div>
+          </div>
+        </div>
+    </div>
+ </section>
